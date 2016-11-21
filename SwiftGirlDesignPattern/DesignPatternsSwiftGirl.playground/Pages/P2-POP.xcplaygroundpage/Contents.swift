@@ -22,11 +22,11 @@ var str = "Hello, Protocol Delegate"
  */
 
 protocol DirectorDelegate {
-    func perfrctShot()//完美鏡頭
+    func perfectShot()//完美鏡頭
 }
 
 class Actor:DirectorDelegate {
-    func perfrctShot() {
+    func perfectShot() {
         print("Fight")
     }
 }
@@ -34,7 +34,7 @@ class Actor:DirectorDelegate {
 class Director {
     var delegate:DirectorDelegate?
     func action() {
-        delegate?.perfrctShot()
+        delegate?.perfectShot()
     }
 }
 
